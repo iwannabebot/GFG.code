@@ -1,5 +1,4 @@
 ## Arrays
----
 #### Problems
 
 |Problem|Link|IdeOneIt|
