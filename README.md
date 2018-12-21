@@ -1,6 +1,6 @@
-##GFG Code
+## GFG Code
 ---
-####Setup Environment
+#### Setup Environment
 
 1. Download MinGW64 from [this link](https://github.com/JerryGoyal/MinGW64/releases/download/v1.0/MinGW64.zip) and extract to <code>C:\MinGW64</code>
 
