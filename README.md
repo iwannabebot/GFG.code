@@ -10,6 +10,6 @@
 
 |Topic|Link|
 |---|---|
-|Arrays|[Link](arrays/readme.md)|
-|Bit Manipulation|[Link](bitmanipulation/readme.md)|
-|Recursion|[Link](recursion/readme.md)|
+|Arrays|[Link](arrays/README.md)|
+|Bit Manipulation|[Link](bitmanipulation/README.md)|
+|Recursion|[Link](recursion/README.md)|
