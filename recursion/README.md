@@ -1,6 +1,4 @@
 ## Arrays
 #### Problems
 
-|Problem|Link|IdeOneIt|
-|---|---|---|
-|Reverse an array |[Link](reverse_array.c)|[Run](https://ide.geeksforgeeks.org/)|
+1. [Print number 1->n, n->1](recursive_print.c.c)
