@@ -9,9 +9,14 @@ int first_index(int array[], int low, int high, int searchValue){
     }
     if(array[mid] == searchValue)
     {
-        if(first_index(array, low, mid-1, searchValue) == -1){
+        if(mid == 0 || array[mid-1] == searchValue){
             return mid;
-        } else {
+        }
+        // if(first_index(array, low, mid-1, searchValue) == -1){
+        //     return mid;
+        // } 
+        else
+        {
             return first_index(array, low, mid-1, searchValue);
         }
     }
