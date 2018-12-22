@@ -1,6 +1,4 @@
 ## Arrays
 #### Problems
-
-|Problem|Link|IdeOneIt|
-|---|---|---|
-|Reverse an array |[Link](reverse_array.c)|[Run](https://ide.geeksforgeeks.org/)|
+1. [Reverse an array](reverse_array.c)
+2. [Binary Search](binary_search.c)
