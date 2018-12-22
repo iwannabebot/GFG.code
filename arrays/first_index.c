@@ -9,7 +9,7 @@ int first_index(int array[], int low, int high, int searchValue){
     }
     if(array[mid] == searchValue)
     {
-        if(mid == 0 || array[mid-1] == searchValue){
+        if(mid == 0 || array[mid-1] != searchValue){
             return mid;
         }
         // if(first_index(array, low, mid-1, searchValue) == -1){
