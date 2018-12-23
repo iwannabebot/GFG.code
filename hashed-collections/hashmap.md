@@ -50,10 +50,13 @@ Few important features of HashMap are:
 
 Internally HashMap contains an array of Node and a node is represented as a class which contains 4 fields :
 
-int hash
-K key
-V value
-Node next
+|HashMap Node|
+|---|
+|int hash||
+|K key|
+|V value|
+|Node next|
+
 It can be seen that node is containing a reference of its own object. So it’s a linked list.
 
 
@@ -73,3 +76,13 @@ It can be seen that node is containing a reference of its own object. So it’s 
 |<code>putAll(Map M)<code>|It is used to copy all of the elements from one map into another.|
 |<code>Object remove(Object key)<code>|It is used to remove the values for any particular key in the Map.|
 |<code>Collection values()<code>|It is used to return a Collection view of the values in the HashMap.|
+|<code>compute(K key, BiFunction<K,V> remappingFunction)</code>|This method Attempts to compute a mapping for the specified key and its current mapped value (or null if there is no current mapping).|
+|<code>computeIfAbsent(K key, Function<K> mappingFunction)</code>|This method If the specified key is not already associated with a value (or is mapped to null), attempts to compute its value using the given mapping function and enters it into this map unless null.|
+|<code>computeIfPresent(K key, BiFunction<K,V> remappingFunction)</code>|This method If the value for the specified key is present and non-null, attempts to compute a new mapping given the key and its current mapped value.|
+|<code>forEach(BiConsumer<K,V> action)</code>|This method Performs the given action for each entry in this map until all entries have been processed or the action throws an exception.|
+|<code>getOrDefault(Object key, V defaultValue)</code>|This method returns the value to which the specified key is mapped, or defaultValue if this map contains no mapping for the key.|
+|<code>merge(K key, V value, BiFunction<K,V> remappingFunction)</code>|This method If the specified key is not already associated with a value or is associated with null, associates it with the given non-null value.|
+|<code>putIfAbsent(K key, V value)</code>|This method If the specified key is not already associated with a value (or is mapped to null) associates it with the given value and returns null, else returns the current value.|
+|<code>replace(K key, V value)</code>|This method replaces the entry for the specified key only if it is currently mapped to some value.|
+|<code>replace(K key, V oldValue, V newValue)</code>|This method replaces the entry for the specified key only if currently mapped to the specified value.|
+|<code>replaceAll(BiFunction<K,V> function)</code>|This method replaces each entry’s value with the result of invoking the given function on that entry until all entries have been processed or the function throws an exception.|
