@@ -11,5 +11,6 @@
 |Topic|Link|
 |---|---|
 |Arrays|[Link](arrays/README.md)|
-|Bit Manipulation|[Link](bitmanipulation/README.md)|
 |Recursion|[Link](recursion/README.md)|
+|Hashed Collections|[Link](hashed-collections/README.md)|
+|Bit Manipulation|[Link](bitmanipulation/README.md)|
