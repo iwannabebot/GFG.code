@@ -1,5 +1,6 @@
-## Dictionary (HashMap)
+## HashMap
 
+## Dictionary (HashMap in C#)
 
 #### Characteristics of Dictionry:
 
@@ -29,3 +30,46 @@ The following diagram illustrates the generic Dictionary class hierarchy.
 |<code>ContainsValue<code>|Checks whether the specified key exists in Dictionary<TKey, TValue>.|
 |<code>Clear<code>|Removes all the elements from Dictionary<TKey, TValue>.|
 |<code>TryGetValue<code>|Returns true and assigns the value with specified key, if key does not exists then return false.|
+
+---
+
+## HashMap in Java
+
+HashMap is a part of Java’s collection since Java 1.2. It provides the basic implementation of Map interface of Java. It stores the data in (Key, Value) pairs. To access a value one must know its key. HashMap is known as HashMap because it uses a technique called Hashing. Hashing is a technique of converting a large String to small String that represents same String. A shorter value helps in indexing and faster searches. HashSet also uses HashMap internally. It internally uses a link list to store key-value pairs already explained in HashSet in detail and further articles.
+
+#### Characteristics of HashMap:
+
+Few important features of HashMap are:
+
+1. HashMap is a part of java.util package.
+2. HashMap extends an abstract class AbstractMap which also provides an incomplete implementation of Map interface.
+3. It also implements Cloneable and Serializable interface. K and V in the above definition represent Key and Value respectively.
+4. HashMap doesn’t allow duplicate keys but allows duplicate values. That means A single key can’t contain more than 1 value but more than 1 key can contain a single value.
+5. HashMap allows null key also but only once and multiple null values.
+6. This class makes no guarantees as to the order of the map; in particular, it does not guarantee that the order will remain constant over time. It is roughly similar to HashTable but is unsynchronized.
+
+Internally HashMap contains an array of Node and a node is represented as a class which contains 4 fields :
+
+int hash
+K key
+V value
+Node next
+It can be seen that node is containing a reference of its own object. So it’s a linked list.
+
+
+
+|METHOD|DESCRIPTION|
+|---|---|
+|<code>void clear()<code>|Used to remove all mappings from a map.|
+|<code>boolean containsKey(Object key)<code>|Used to return True if for a specified key, mapping is present in the map.|
+|<code>boolean containsValue(Object value)<code>|Used to return true if one or more key is mapped to a specified value.|
+|<code>Object clone()<code>|It is used to return a shallow copy of the mentioned hash map.|
+|<code>boolean isEmpty()<code>|Used to check whether the map is empty or not. Returns true if the map is empty.|
+|<code>Set entrySet()<code>|It is used to return a set view of the hash map.|
+|<code>Object get(Object key)<code>|It is used to retrieve or fetch the value mapped by a particular key.|
+|<code>Set keySet()<code>|It is used to return a set view of the keys.|
+|<code>int size()<code>|It is used to return the size of a map.|
+|<code>Object put(Object key, Object value)<code>|It is used to insert a particular mapping of key-value pair into a map.|
+|<code>putAll(Map M)<code>|It is used to copy all of the elements from one map into another.|
+|<code>Object remove(Object key)<code>|It is used to remove the values for any particular key in the Map.|
+|<code>Collection values()<code>|It is used to return a Collection view of the values in the HashMap.|

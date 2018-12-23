@@ -1,5 +1,6 @@
 ## HashSet
 
+### HashSet in C#
 A <code>HashSet<T></code> is an unordered collection of the unique elements. It comes under System.Collections.Generic namespace. It is used in a situation where we want to prevent duplicates from being inserted in the collection. As far as performance is concerned, it is better in comparison to the list.
 
 #### Characteristics of HashSet Class:
@@ -39,3 +40,33 @@ A <code>HashSet<T></code> collection is not sorted and cannot contain duplicate 
 |<code>TrimExcess()<code>|Sets the capacity of a HashSet object to the actual number of elements it contains, rounded up to a nearby, implementation-specific value.|
 |<code>TryGetValue(T, T)<code>|Searches the set for a given value and returns the equal value it finds, if any.|
 |<code>UnionWith(IEnumerable)<code>|Modifies the current HashSet object to contain all elements that are present in itself, the specified collection, or both.|
+
+---
+
+### HashSet in Java
+
+The HashSet class implements the Set interface, backed by a hash table which is actually a HashMap instance. No guarantee is made as to the iteration order of the set which means that the class does not guarantee the constant order of elements over time. This class permits the null element. The class also offers constant time performance for the basic operations like add, remove, contains and size assuming the hash function disperses the elements properly among the buckets, which we shall see further in the article.
+
+#### Characteristics of HashSet Class:
+
+Few important features of HashSet are:
+
+1. Implements Set Interface.
+2. Underlying data structure for HashSet is hashtable.
+3. As it implements the Set Interface, duplicate values are not allowed.
+4. Objects that you insert in HashSet are not guaranteed to be inserted in same order. Objects are inserted based on their hash code.
+5. NULL elements are allowed in HashSet.
+6. HashSet also implements Searlizable and Cloneable interfaces.
+
+![generic-hashset](https://cdncontribute.geeksforgeeks.org/wp-content/uploads/hashset.png)
+
+|METHOD|DESCRIPTION|
+|---|---|
+|<code>boolean add(E e)<code>|Used to add the specified element if it is not present, if it is present then return false.|
+|<code>void clear()<code>|Used to remove all the elements from set.|
+|<code>boolean contains(Object o)<code>|Used to return true if an element is present in set.|
+|<code>boolean remove(Object o)<code>|Used to remove the element if it is present in set.|
+|<code>Iterator iterator()<code>|Used to return an iterator over the element in the set.|
+|<code>boolean isEmpty()<code>|Used to check whether the set is empty or not. Returns true for empty and false for non-empty condition for set.|
+|<code>int size()<code>|Used to return the size of the set.|
+|<code>Object clone()<code>|Used to create a shallow copy of the set.|
