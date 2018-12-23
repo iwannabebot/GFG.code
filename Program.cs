@@ -6,7 +6,9 @@ namespace GFG.code
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            hashed_collections.basic_hashmap.run();
+            Console.WriteLine("Press Any Key to exit");
+            Console.ReadLine();
         }
     }
 }
