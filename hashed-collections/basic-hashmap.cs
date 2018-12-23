@@ -61,25 +61,4 @@ namespace GFG.code.hashed_collections
             }
         }
     }
-
-    public class LinkedHashMapTest
-    {
-        public static void Test()
-        {
-            var lhm = new LinkedHashMap<char, int>();
-
-            lhm['a'] = 1;
-            lhm['b'] = 2;
-            lhm['c'] = 3;
-
-
-            Console.WriteLine(lhm['a']);
-            Console.WriteLine(lhm['b']);
-            Console.WriteLine(lhm['c']);
-
-            Console.WriteLine(lhm.PopFirst());
-            Console.WriteLine(lhm.PopFirst());
-            Console.WriteLine(lhm.PopFirst());
-        }
-    }
 }

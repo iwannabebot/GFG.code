@@ -5,4 +5,43 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove=".gitignore" />
+    <None Remove="arrays\binary_search.c" />
+    <None Remove="arrays\count_occurance.c" />
+    <None Remove="arrays\find_in_distinct_sorted_rotated.c" />
+    <None Remove="arrays\find_in_infinite.c" />
+    <None Remove="arrays\find_sum_in_subset.c" />
+    <None Remove="arrays\first_index.c" />
+    <None Remove="arrays\README.md" />
+    <None Remove="arrays\reverse_array.c" />
+    <None Remove="arrays\rotate_array.c" />
+    <None Remove="binary_search.exe" />
+    <None Remove="bitmanipulation\README.md" />
+    <None Remove="count_occurance.exe" />
+    <None Remove="find_in_infinite.exe" />
+    <None Remove="find_sum_in_subset.exe" />
+    <None Remove="first_index.exe" />
+    <None Remove="GFG.code-workspace" />
+    <None Remove="hashed-collections\hashmap.md" />
+    <None Remove="hashed-collections\hashset.md" />
+    <None Remove="hashed-collections\README.md" />
+    <None Remove="max_pieces.exe" />
+    <None Remove="oneton.exe" />
+    <None Remove="README.md" />
+    <None Remove="recursion\find_sum_in_subset.c" />
+    <None Remove="recursion\max_pieces.c" />
+    <None Remove="recursion\README.md" />
+    <None Remove="recursion\recursive_print.c" />
+    <None Remove="recursion\subset_sum.c" />
+    <None Remove="reverse_array.exe" />
+    <None Remove="vijay\find sum subset1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="arrays\" />
+    <Folder Include="bitmanipulation\" />
+    <Folder Include="vijay\" />
+  </ItemGroup>
+
 </Project>

@@ -86,3 +86,37 @@ It can be seen that node is containing a reference of its own object. So it’s 
 |<code>replace(K key, V value)</code>|This method replaces the entry for the specified key only if it is currently mapped to some value.|
 |<code>replace(K key, V oldValue, V newValue)</code>|This method replaces the entry for the specified key only if currently mapped to the specified value.|
 |<code>replaceAll(BiFunction<K,V> function)</code>|This method replaces each entry’s value with the result of invoking the given function on that entry until all entries have been processed or the function throws an exception.|
+
+
+---
+
+[`Dictionary`][1] is probably the closest. `System.Collections.Generic.Dictionary` implements the [`System.Collections.Generic.IDictionary`][2] interface (which is similar to Java's `Map` interface).
+
+Some notable differences that you should be aware of:
+
+* Adding/Getting items
+  * Java's HashMap has the `put` and `get` methods for setting/getting items
+     * `myMap.put(key, value)`
+     * `MyObject value = myMap.get(key)`
+  * C#'s Dictionary uses `[]` indexing for setting/getting items
+     * `myDictionary[key] = value`
+     * `MyObject value = myDictionary[key]`
+* `null` keys
+  * Java's `HashMap` allows null keys
+  * .NET's `Dictionary` throws an `ArgumentNullException` if you try to add a null key
+* Adding a duplicate key
+  * Java's `HashMap` will replace the existing value with the new one.
+  * .NET's `Dictionary` will replace the existing value with the new one if you use `[]` indexing.  If you use the `Add` method, it will instead throw an `ArgumentException`.
+* Attempting to get a non-existent key
+  * Java's `HashMap` will return null.
+  * .NET's `Dictionary` will throw a `KeyNotFoundException`.  You can use the [`TryGetValue`][3] method instead of the `[]` indexing to avoid this:  
+     `MyObject value = null;
+      if (!myDictionary.TryGetValue(key, out value)) { /* key doesn't exist */ }`
+
+`Dictionary`'s has a [`ContainsKey`][4] method that can help deal with the previous two problems.
+
+
+  [1]: https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2
+  [2]: https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2
+  [3]: https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2.trygetvalue
+  [4]: https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2.containskey
